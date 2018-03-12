@@ -98,7 +98,7 @@ bool readHead ( const char * srcFileName,
         return false;
 
     interleaveBegintmp = head[6] >> 5;
-    interleaveBegintmp = interleaveBegintmp & 7;
+    interleaveBegintmp = interleaveBegintmp & 7; 
     interleaveBegin = pow(2,interleaveBegintmp);
 
     if(interleaveBegin == 128)
